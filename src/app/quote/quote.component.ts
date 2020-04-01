@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Quotes } from "../quotes"
+import { Quotes } from "../quote"
 
 @Component({
-  selector: 'app-quotes',
-  templateUrl: './quotes.component.html',
-  styleUrls: ['./quotes.component.css']
+  selector: 'app-quote',
+  templateUrl: './quote.component.html',
+  styleUrls: ['./quote.component.css']
 })
-export class QuotesComponent implements OnInit {
+export class QuoteComponent implements OnInit {
 
   quotes = []
   addNewQuote(newEntry) {
@@ -23,7 +23,7 @@ export class QuotesComponent implements OnInit {
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

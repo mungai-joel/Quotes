@@ -1,22 +1,27 @@
+import { DateCountPipe } from './date-count.pipe';
+import { VoteDirective } from './vote.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-
+import { from } from 'rxjs';
+import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
-    QuotesComponent,
+    QuoteComponent,
     QuoteDetailsComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    VoteDirective,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

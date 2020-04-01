@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    color: rgb(255, 247, 240);
+    background-image: url("assets/wp2770539-abstract-gaming-wallpapers-1080p.jpg");
+}

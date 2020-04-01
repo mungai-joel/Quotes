@@ -9,8 +9,8 @@
         <div class="row">
             <div class="column">
 
-                <div *ngFor="let quotes of quotess; let i = index">
-                    <app-quote-details [quotes]="quotes" [quotes]="quotes" (isComplete)="deleteQuote($event,i)">
+                <div *ngFor="let quote of quotes; let i = index">
+                    <app-quote-details [quote]="quote" [quote]="quote" (isComplete)="deleteQuote($event,i)">
                     </app-quote-details>
                 </div>
             </div>
