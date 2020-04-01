@@ -1,0 +1,28 @@
+<div class="card bg-default text-black text-center p-3">
+    <blockquote class="blockquote mb-0">
+        <p>{{quote.quoteMovie}}</p>
+        <footer class="blockquote-footer">
+            <small>
+                {{quote.quoteName}} posted on {{quote.completeDate|timeAgo}}
+
+            </small>
+        </footer>
+    </blockquote>
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <a class="btn btn-default" href (click)="likeVote()"><span class="fa fa-thumbs-up"
+                    aria-hidden="true"></span></a>
+        </div>
+        <div class="btn-group" role="group">
+            {{ upvotes }}
+        </div>
+        <div class="btn-group" role="group">
+            <a class="btn btn-default" href (click)="dislikeVote()"><span class="fa fa-thumbs-down"
+                    aria-hidden="true"></span></a>
+        </div>
+        <div class="btn-group" role="group">
+            {{ downvotes }}
+        </div>
+        <button class="btn btn-info" (click)='quoteDelete(true)'>Delete Quote</button>
+    </div>
+</div>
