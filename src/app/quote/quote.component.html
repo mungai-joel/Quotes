@@ -1,13 +1,15 @@
 <div class="container">
     <div class="jumbotron">
         <h2 class="text-center">Gimme Quotes</h2>
+
+
         <div>
             <app-quote-form (emitQuote)="addNewQuote($event)"></app-quote-form>
         </div>
         <br>
 
         <div class="row">
-            <div class="column">
+            <div class="col-12">
 
                 <div *ngFor="let quote of quotes; let i = index">
                     <app-quote-details [quote]="quote" [quote]="quote" (isComplete)="deleteQuote($event,i)">
