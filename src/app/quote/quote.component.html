@@ -12,6 +12,7 @@
             <div class="col-12">
 
                 <div *ngFor="let quote of quotes; let i = index">
+
                     <app-quote-details [quote]="quote" [quote]="quote" (isComplete)="deleteQuote($event,i)">
                     </app-quote-details>
                 </div>
