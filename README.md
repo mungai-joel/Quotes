@@ -1,20 +1,19 @@
 
-#### Quotes
+# Quotes
 
-##By joel kibugi
+#### By **{mungai joel}**
 
-####Description
-a web application which you enter movie quotes and also author name.
+## Description
+A web application which you enter movie quotes and also author name.
 
-##Setup//instalation requirements
+## Setup/Installation Requirements
+* Acces to the internet
+* A device thats able to access the internet
+* An internet browser
+## link to live site
+[https://mungai-joel.github.io](link)
 
-internet connection
-device that has access to internet
-
-##live site
-
-
-##Technologies Used
+## Technologies Used
 HTML
 CSS
 Javascript
@@ -48,8 +47,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##License
-
+### License
 MIT License
 
 Copyright (c) 2020 mungai-joel
