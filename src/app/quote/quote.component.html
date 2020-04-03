@@ -1,6 +1,29 @@
 <div class="container">
     <div class="jumbotron">
-        <h2 class="text-center">Gimme Quotes</h2>
+        <h2 class="text-center">Give me QUOTES</h2>
+
+
+
+        <div class="form-group">
+            <div>
+                <label for="movie quote"><b>quotes:</b></label>
+                <textarea required class="form-control" id="quote" ngModel name="quote" placeholder="favourite quote" rows="2" required></textarea>
+
+
+            </div>
+            <div class="form-group">
+
+                <label for="name"><b>Author name:</b></label>
+                <input required ngModel name="quotes" placeholder="Author name" required class="form-control" id="quotes" name="author">
+
+
+            </div>
+        </div>
+
+        <button class="btn btn-success text-center" value="submit" type="submit">Submit Movie quote</button>
+
+
+
 
 
         <div>
@@ -11,12 +34,14 @@
         <div class="row">
             <div class="col-12">
 
-                <div *ngFor="let quote of quotes; let i = index">
 
-                    <app-quote-details [quote]="quote" [quote]="quote" (isComplete)="deleteQuote($event,i)">
+                <div *ngFor='let quote of quotes; let i = index'>
+                    <app-quote-details [quote]="quote" [quote]='quote' (isComplete)='deleteQuote($event,i)'>
                     </app-quote-details>
                 </div>
             </div>
+
+
         </div>
     </div>
 </div>
