@@ -4,12 +4,13 @@
 #### By **{mungai joel}**
 
 ## Description
-A web application which you enter movie quotes and also author name.
+ A web application which you enter movie quotes and also author name.
 
 ## Setup/Installation Requirements
 * Acces to the internet
 * A device thats able to access the internet
 * An internet browser
+
 ## link to live site
 [https://mungai-joel.github.io](link)
 
